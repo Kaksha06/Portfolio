@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -20,10 +21,10 @@
             <div class="left">Kaksha's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li> <a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,8 +46,44 @@
                 <img src="./img.png">
             </div>
         </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2 class="section-title">About <span class="purple">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Kaksha, a passionate Full Stack Developer with expertise in building exceptional
+                            digital experiences. I specialize in creating responsive, user-friendly web applications
+                            that deliver real value to users.</p>
+
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3>Frontend</h3>
+                                <ul>
+                                    <li>HTML5 </li>
+                                    <li>JavaScript</li>
+                                    <li>CSS3</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Backend</h3>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                    <li>RESTful APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <hr>
-        <section class="secondsection">
+        <section id="projects" class="secondsection">
             <span class="text-gray">What I have done so far</span>
             <h1>Projects List</h1>
             <div class="box">
@@ -76,7 +113,8 @@
                         EazyEats
                     </div>
                     <div class="vertical-desc">
-                        This Project aims to revolutionize the dining reservation experience.Currently working on this project. The project includes technologies such as HTML, CSS, JavaScript.
+                        This Project aims to revolutionize the dining reservation experience.Currently working on this
+                        project. The project includes technologies such as HTML, CSS, JavaScript.
                     </div>
                 </div>
                 <div class="vertical">
@@ -85,7 +123,8 @@
                         Portfolio
                     </div>
                     <div class="vertical-desc">
-                        A responsive web project that aims to show the details of users professional data. It showcases skills,experience and accomplishments. Currently working on this project.
+                        A responsive web project that aims to show the details of users professional data. It showcases
+                        skills,experience and accomplishments. Currently working on this project.
                     </div>
                 </div>
                 <div class="vertical">
@@ -94,8 +133,63 @@
                         Youtube-backend
                     </div>
                     <div class="vertical-desc">
-                    A scalable backend system that powers core YouTube-like functionalities.Currently working on this project.
+                        A scalable backend system that powers core YouTube-like functionalities.Currently working on
+                        this project.
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="section-title">Get In <span class="purple">Touch</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say
+                            hi, I'll get back to you as soon as possible!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:kakshakalavadia@gmail.com">kakshakalavadia@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Location</h3>
+                                    <span>Rajkot, Gujarat, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -104,34 +198,39 @@
         <div class="footer">
             <div class="footer-first">
                 <h3>Kaksha's Portfolio</h3>
+                <p> Junior Software Developer | Problem Solver | Tech Enthusiast</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                </div>
             </div>
             <div class="footer-second">
+                <h4>Quick Links</h4>
                 <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>
             <div class="footer-third">
+                <h4>Contact Info</h4>
                 <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li><i class="fas fa-envelope"></i> kakshakalavadia@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 XXXXXXXXXX</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Gujarat, India</li>
                 </ul>
             </div>
         </div>
         <div class="footer-text-center">
-            Copyright © www.kakshaportfolio.com | All rights reserved
+            &copy; 2025 Kaksha's Portfolio. All rights reserved.
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js "></script>

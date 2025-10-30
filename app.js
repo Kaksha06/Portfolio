@@ -4,7 +4,7 @@ var typed = new Typed('#element', {
         });
 
 document.querySelector(".btn1").addEventListener("click", function() {
-  window.open("./Kaksha.pdf", "_blank"); // Opens in new tab
+  window.open("./Kaksha_Resume.pdf", "_blank"); // Opens in new tab
 });
 
 document.querySelector(".btn2").addEventListener("click", function() {
